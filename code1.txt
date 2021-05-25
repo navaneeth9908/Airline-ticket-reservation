@@ -1,0 +1,55 @@
+CREATE TABLE airlines (
+airlines_Id int (10) NOT NULL,
+airlines_name Varchar (50) NOT NULL,
+airlines_no Int (10) NOT NULL,
+airlines_source Varchar (50) NOT NULL,
+airlines_destination Varchar (20) NOT NULL,
+airlines_travel_time Varchar (30) NOT NULL,
+airlines_total_distance int (20) NOT NULL
+PRIMARY KEY (airlines_Id)
+);
+
+
+CREATE TABLE airline_type (
+airline_type_id int (10) NOT NULL,
+airline_type_name varchar (100) NOT NULL
+);
+CREATE TABLE booking (
+booking_id int (10) NOT NULL,
+booking_user varchar (100) NOT NULL,
+booking_route_id varchar (100) NOT NULL,
+booking_date varchar (100) NOT NULL,
+booking_total_fare int (10) NOT NULL,
+booking_journey_date varchar (100) NOT NULL,
+booking_seat_type varchar (100) NOT NULL,
+booking_status varchar (100) NOT NULL
+);
+
+
+CREATE TABLE city (
+
+city_id int (10) NOT NULL,
+city_name varchar (100) NOT NULL
+);
+
+CREATE TABLE Passenger (
+Passenger int (10) NOT NULL,
+Passenger_booking_id varchar (100) NOT NULL,
+Passenger_type varchar (100) NOT NULL,
+Passenger_name varchar (100) NOT NULL,
+Passenger_gender varchar (100) NOT NULL,
+Passenger_age int(100) NOT NULL,
+Passenger_seat_no int (100) NOT NULL
+);
+
+CREATE TABLE route (
+route_id int (10) NOT NULL,
+route_airlines_id varchar (100) NOT NULL,
+route_from_arrival varchar (100) NOT NULL,
+route_to_city varchar (100) NOT NULL,
+route_economy_fare varchar (100) NOT NULL,
+route_business_fare varchar (100) NOT NULL
+);
+
+
+
